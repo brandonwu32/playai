@@ -11,6 +11,15 @@
     filter: invert(100%)
 }
 
+.canvas {
+    border: 1px solid black;
+    max-width: 40vw;
+    max-height: 80vh;
+    @media (max-width: 500px) {
+        min-height: 40vh;
+        min-width: 80vw;
+    }
+}
 
 .start-container {
     display: flex;
@@ -20,6 +29,9 @@
     align-items: center;
     justify-content: center;
     gap: 10vw;
+    @media (max-width: 500px) {
+        flex-direction: column;
+    }
 }
 
 .base-container {
@@ -27,6 +39,10 @@
     flex-direction: column;
     align-items: center;
     gap: 1vw;
+    @media (max-width: 500px) {
+        gap: 1vh;
+        flex-direction: column;
+    }
 }
 
 .page-options {
@@ -35,6 +51,10 @@
     gap: 5vh;
     justify-content: center;
     max-width: 10vw;
+    @media (max-width: 500px) {
+        gap: 1vh;
+        max-width: 100%;
+    }
 }
 
 .page-input {
@@ -42,6 +62,9 @@
     flex-direction: column;
     align-items: center;
     gap: 1vh;
+    @media (max-width: 500px) {
+        gap: 1vh;
+    }
 }
 
 .buttons {
@@ -49,6 +72,11 @@
     flex-direction: column;
     width: 80%;
     gap: 5vh;
+    @media (max-width: 500px) {
+        gap: 1vh;
+        flex-direction: row;
+        width: 90%;
+    }
 }
 
 input[type="file"] {
@@ -71,3 +99,4 @@ input[type="file"] {
 .custom-file-upload:hover {
     filter: invert(100%)
 }
+

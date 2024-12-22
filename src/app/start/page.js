@@ -185,7 +185,7 @@ export default function Start() {
               />
           </div>
           <div className = 'base-container'>
-            <canvas id="pdfCanvas" style={{ border: "1px solid black", maxWidth: '40vw', maxHeight: '80vh' }}></canvas>
+            <canvas className = 'canvas' id="pdfCanvas"></canvas>
             {!loading && audioUrl && (
                 <div>
                     <audio controls>
