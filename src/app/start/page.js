@@ -109,8 +109,8 @@ export default function Start() {
       const options = {
         method: 'PATCH',
         headers: {
-          AUTHORIZATION: 'ak-2183df1d15924c70a569ce4186e28b23',
-          'X-USER-ID': 'tKIMNycDdmedLkMx785B2iEtZJo1',
+          AUTHORIZATION: `${process.env.AUTHORIZATION2}`,
+          'X-USER-ID': `${process.env.USERID2}`,
           'content-type': 'application/json',
           accept: 'application/json'
         },
