@@ -3,7 +3,7 @@
 import styles from "@/app/page.module.css";
 import './page.css';
 import * as pdfjsLib from "pdfjs-dist";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import BarLoader from "react-spinners/BarLoader";
 import Image from "next/image";
 import { open as openEmbed } from "@play-ai/web-embed";
@@ -109,9 +109,9 @@ export default function Start() {
       const options = {
         method: 'PATCH',
         headers: {
-          AUTHORIZATION: `${process.env.AUTHORIZATION}`,
-          'X-USER-ID': `${process.env.USERID}`,
-          'Content-Type': 'application/json',
+          AUTHORIZATION: 'ak-2183df1d15924c70a569ce4186e28b23',
+          'X-USER-ID': 'tKIMNycDdmedLkMx785B2iEtZJo1',
+          'content-type': 'application/json',
           accept: 'application/json'
         },
         body: '{"prompt":"Page Content: ' + text + '"}'
