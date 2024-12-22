@@ -39,6 +39,7 @@ export default function Start() {
     };
 
     function handleUpload(event) {
+        updateChatBot("Content: A file that cannot be read due to malformed input")
         const file = event.target.files[0];
         if (file) {
           setFileUploaded(true)
