@@ -110,8 +110,8 @@ export default function Start() {
       const options = {
         method: 'PATCH',
         headers: {
-          AUTHORIZATION: `${process.env.NEXT_PUBLIC_AUTHORIZATION2}`,
-          'X-USER-ID': `${process.env.NEXT_PUBLIC_USERID2}`,
+          AUTHORIZATION: "ak-2183df1d15924c70a569ce4186e28b23",
+          'X-USER-ID': "tKIMNycDdmedLkMx785B2iEtZJo1",
           'content-type': 'application/json',
           accept: 'application/json'
         },
@@ -130,8 +130,8 @@ export default function Start() {
       const options = {
         method: 'POST',
         headers: {
-          AUTHORIZATION: `${process.env.NEXT_PUBLIC_AUTHORIZATION}`,
-          'X-USER-ID': `${process.env.NEXT_PUBLIC_USERID}`,
+          AUTHORIZATION: "ak-c3eaeadb838944cfaec82e41129a71f3",
+          'X-USER-ID': "5jcbndHqeMg9yRPw95Ti5cVfNus2",
           'Content-Type': 'application/json'
         },
         body: `{
